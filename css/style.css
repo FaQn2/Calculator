@@ -1,0 +1,86 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+H1{
+    color: wheat;
+    margin: 50PX;
+    font-size: 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 15px;
+    background-color: rgb(7, 7, 7);
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 12px solid rgb(247, 243, 243);
+    background: #ebebeb;
+    border-radius: 9px;
+background: #e0e0e0;
+box-shadow:  4px 4px 8px #555555,
+             -4px -4px 8px #8b8b8b;
+}
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid rgb(182, 182, 182);
+    overflow-x: auto;
+    background-color: aliceblue;
+    border-radius: 8px 8px 0 0;
+    font-size: 42px;
+    transition: all 3s;
+}
+.calculator-keypad{
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 9px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 9px #d5d5d57e,
+                 -5px -5px 9pxrgba(235, 235, 235, 0.5)b;
+}
+/* sombreado de los botones al pasar el mouse */
+.keypad-button:hover{
+
+background: #e0e0e0;
+box-shadow:  3px 2px 6px #bebebe,
+             -2px -2px 6px #ffffff;
+}
+
+.keypad-button.operator {
+    background-color: rgba(66, 194, 253, 0.164);
+}
+
+.keypad-button.large {
+    width: 50%;
+}
+.keypad-button.porcent {
+    background-color: rgba(154, 186, 255, 0.308);
+}
+
+
